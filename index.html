@@ -11,11 +11,15 @@
 		<title>Slim loader Bar</title>
 	</head>
     <body style="border: 0;padding: 0;background-color: black;"> 
-		<div id="loadingBar">
-            <div id="backload" style="background: transparent;width: 100%;height: 0.5px;position: relative;box-shadow: 0px 0px 2px grey;">    
-                <div id="frontload" style="background: red;width: 0px;height: 0.7px;position: absolute;opacity: 100%;z-index: 9999;">       
+		<div id="loadingBar" style=" overflow: hidden;position: fixed; top: 0; 
+		width: 100%;z-index: 9999999999999999999;">
+            <div id="backload" style="overflow: hidden;background: transparent;width: 100%;height: 2px;position: relative;box-shadow: 0px 0px 2px black;">    
+                <div id="frontload" style="overflow: hidden;background: red;width: 0px;height: 2px;position: absolute;opacity: 100%;z-index: 1;">       
 				</div>
             </div>
-        </div>
+		</div>
+		<button onClick="window.location.href=window.location.href" style="display: block;height: 500px;width: 500px;font-size: 50pt;margin-top: 12.5%;margin-left: 35%;cursor: pointer;">Refresh Page</button>
+		<button onClick="window.location.href=window.location.href" style="display: block;height: 500px;width: 500px;font-size: 50pt;margin-top: 12.5%;margin-left: 35%;cursor: pointer;">Refresh Page</button>
+
 	</body>
 </html>
